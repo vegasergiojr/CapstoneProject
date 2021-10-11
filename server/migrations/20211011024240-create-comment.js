@@ -12,7 +12,8 @@ module.exports = {
         type: Sequelize.TEXT
       },
       post_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references:{ model:"Posts", field: "id" }
       },
       commentor_id: {
         type: Sequelize.INTEGER
