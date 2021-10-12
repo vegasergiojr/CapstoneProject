@@ -3,10 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { compose, createStore, applyMiddleware } from 'redux';
+import { Route } from 'react-router';
+import thunk from 'redux-thunk';
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore( *goalsReducer*, composeEnhancers(
+  applyMiddleware(thunk)
+))
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter>
+        <BaseLayout>
+          <Route component={} exact path='/' />
+          <Route component={} path="/ " />
+          <Route component={} path="/" />
+          <Route component={} path="/ " />
+          <Route component={} path="/" />
+        </BaseLayout>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
