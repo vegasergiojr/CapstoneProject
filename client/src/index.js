@@ -11,6 +11,9 @@ import reducer from './store/reducers/postsReducer'
 import Login from './components/Login';
 import BaseLayout from './components/BaseLayout';
 import AddPost from './components/AddPost';
+import Post from './components/Posts';
+import EditProfile from './components/EditProfile';
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -25,9 +28,9 @@ ReactDOM.render(
         <BaseLayout>
           <Route component={ Login } exact path='/' />
           <Route component={ AddPost } path="/create-a-post" />
-          {/* <Route component={} path="/" />
-          <Route component={} path="/ " />
-          <Route component={} path="/" /> */}
+          <Route component={ Post } path="/posts" />
+          <Route component={ EditProfile} path="/edit-profile" />
+
         </BaseLayout>
       </BrowserRouter>
     </Provider>

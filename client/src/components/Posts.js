@@ -4,12 +4,13 @@ import { useEffect } from 'react';
 import * as actionCreators from '../store/creators/actionCreators';
 
 function Posts(props) {
+
     useEffect(() => {
         props.onAllPosts()
     }, [])
 
     const handlePostDelete = (post) => {
-        fetch(`https://localhost:/8080/api/post/${post.id}`, {
+        fetch(`http://localhost:8080/api/post/${post.id}`, {
             method:'DELETE'
         })
             .then(response => response.json())
@@ -22,9 +23,9 @@ function Posts(props) {
         return <ul id="postUL">
             <li key= {post.id}>
                 <div>{post.body_text}</div>
-                <div>{post.image}</div>
+                <div><img src={post.image}></img></div>
                 <div>{post.user_id}</div>
-                <button onClick= {() => handlePostDelete(post)}>Delete Post</button>
+                <button onClick = {() => handlePostDelete(post)}>Delete Post</button>
             </li>
         </ul>
     })

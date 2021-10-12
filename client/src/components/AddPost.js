@@ -14,7 +14,7 @@ function AddPost(props) {
     }
 
     const newPost = () => {
-        fetch('https://localhost:8080/api/post', {
+        fetch('http://localhost:8080/api/post', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(post)

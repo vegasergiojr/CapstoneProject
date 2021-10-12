@@ -46,7 +46,7 @@ app.get('/api/post',(req, res) => {
 
 app.delete('/api/post/:postId', (req, res) => {
 
-    const postd = parseInt(req.params.postId) 
+    const postId = parseInt(req.params.postId) 
 
     models.Post.destroy({
         where: {
