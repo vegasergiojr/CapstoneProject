@@ -13,7 +13,7 @@ import BaseLayout from './components/BaseLayout';
 import AddPost from './components/AddPost';
 import Post from './components/Posts';
 import EditProfile from './components/EditProfile';
-
+import Profile from './components/Profile';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -26,11 +26,11 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <BaseLayout>
-          <Route component={ Login } exact path='/' />
+          <Route component={ Login } exact path='/login' />
           <Route component={ AddPost } path="/create-a-post" />
           <Route component={ Post } path="/posts" />
           <Route component={ EditProfile} path="/edit-profile" />
-
+          <Route component={ Profile } path="/profile" />
         </BaseLayout>
       </BrowserRouter>
     </Provider>

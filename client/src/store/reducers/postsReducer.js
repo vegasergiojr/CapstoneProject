@@ -1,6 +1,7 @@
 
 const initialState = {
-    posts:[]
+    posts:[],
+    info:[]
 }
 
 const reducer = (state = initialState, action) => {
@@ -11,10 +12,16 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 posts: action.payload
             }
-
+        case 'INFO':
+            return {
+                ...state,
+                info: action.payload
+            }
             default:
                 return state
     }
 }
 
 export default reducer
+
+
