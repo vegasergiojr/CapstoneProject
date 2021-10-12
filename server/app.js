@@ -3,7 +3,7 @@ const models = require('./models')
 const cors = require('cors')
 const db = require('./models')
 const app = express() 
-const jwt = require('jsonwebtoken')
+
 const authenticate = ('./middleware/authMiddleware')
 const PORT = process.env.PORT || 8080
 
@@ -36,9 +36,9 @@ app.post('/api/post', (req, res) => {
 
 })
 
-app.get('/api/post', authenticate, (req, res) => {
+app.get('/api/post',(req, res) => {
     // get all posts
-    models.PostfindAll({})
+    models.Post.findAll({})
     .then(posts => {
         res.json(posts)
     })

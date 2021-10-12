@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { compose, createStore, applyMiddleware } from 'redux';
 import { Route } from 'react-router';
 import thunk from 'redux-thunk';
+import reducer from './store/reducers/postsReducer'
+import Login from './components/Login';
+import BaseLayout from './components/BaseLayout';
+import AddPost from './components/AddPost';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore( *goalsReducer*, composeEnhancers(
+const store = createStore( reducer, composeEnhancers(
   applyMiddleware(thunk)
 ))
 
@@ -20,11 +23,11 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <BaseLayout>
-          <Route component={} exact path='/' />
+          <Route component={ Login } exact path='/' />
+          <Route component={ AddPost } path="/create-a-post" />
+          {/* <Route component={} path="/" />
           <Route component={} path="/ " />
-          <Route component={} path="/" />
-          <Route component={} path="/ " />
-          <Route component={} path="/" />
+          <Route component={} path="/" /> */}
         </BaseLayout>
       </BrowserRouter>
     </Provider>
