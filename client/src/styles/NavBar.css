@@ -1,0 +1,13 @@
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em;
+    font-size: x-large;
+    font-weight: 700;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+a:link {
+    text-decoration: none;
+}

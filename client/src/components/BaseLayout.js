@@ -1,14 +1,16 @@
 
 import NavBar from "./NavBar"
+import '../styles/BaseLayout.css'
 
 function BaseLayout(props) {
     return (
         <div id="layout">
             <NavBar />
-            {props.children}
+            <div id="children">{props.children}</div>
             <footer></footer>
         </div>
     )
 }
 
 export default BaseLayout
+

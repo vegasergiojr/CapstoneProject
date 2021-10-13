@@ -1,0 +1,24 @@
+#addPostDiv {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width:20em;
+    justify-content: center;
+}
+
+textarea {
+    align-self: center;
+    width: 15em;
+    height: 7em;
+    font-size: xx-large;
+}
+
+input{
+    font-size: larger;
+}
+
+button{
+    align-self: center;
+
+    width: 10em;
+}

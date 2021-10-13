@@ -26,6 +26,8 @@ function Posts(props) {
                 <div><img src={post.image}></img></div>
                 <div>{post.user_id}</div>
                 <button onClick = {() => handlePostDelete(post)}>Delete Post</button>
+                <div><input type="text" name="body" placeholde="Comment" /></div>
+                <button >Comment</button>
             </li>
         </ul>
     })
