@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Axios from 'axios'
 import NewItem from './NewsItem';
 
+
 const NewsList = () => {
     const [articles, setArticles] = useState([]);
 
@@ -17,7 +18,7 @@ const NewsList = () => {
         getArticles()
     }, [])
     return (
-        <div>
+        <div >
             {articles.map(({ title, description, url, urlToImage }) => (
                 <NewItem
                     title={title}
