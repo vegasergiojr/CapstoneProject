@@ -74,8 +74,9 @@ app.post('/api/info', (req, res) => {
 
 
 
+
     const info = models.Edit.build({
-        about_me: about_me
+        about_me: about_me,
 
     
     })

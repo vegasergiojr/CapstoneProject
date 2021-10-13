@@ -12,7 +12,7 @@ function Profile(props){
     }, [])
 
     const userInfo = props.info.map(edit => {
-        return <ul id="infoUL">
+        return <div id="infoUL">
             <li key= {edit.id}>
                 <div>{edit.about_me}</div>
                 <div>{edit.cont1}</div>
@@ -27,7 +27,7 @@ function Profile(props){
                 <div>{edit.link5}</div>
 
             </li>
-        </ul>
+        </div>
     })
 
     return(

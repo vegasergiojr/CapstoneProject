@@ -8,12 +8,11 @@ import { compose, createStore, applyMiddleware } from 'redux';
 import { Route } from 'react-router';
 import thunk from 'redux-thunk';
 import reducer from './store/reducers/postsReducer'
-import Login from './components/Login';
 import BaseLayout from './components/BaseLayout';
 import AddPost from './components/AddPost';
-import Post from './components/Posts';
 import EditProfile from './components/EditProfile';
 import Profile from './components/Profile';
+import App from './components/App';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -26,9 +25,8 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <BaseLayout>
-          <Route component={ Login } exact path='/login' />
+          <Route component={ App } exact path='/' />
           <Route component={ AddPost } path="/create-a-post" />
-          <Route component={ Post } path="/posts" />
           <Route component={ EditProfile} path="/edit-profile" />
           <Route component={ Profile } path="/profile" />
         </BaseLayout>

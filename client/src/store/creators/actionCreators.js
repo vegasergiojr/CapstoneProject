@@ -10,12 +10,12 @@ export const fetchPosts = () => {
 }
 
 export const fetchInfo = () => {
-    return (dispatch) => {
-    fetch('http://localhost:8080/api/info')
-    .then(response => response.json())    
-    .then(info => {
-        dispatch({type:'INFO', payload: info})
-    })
-}
+        return (dispatch) => {
+        fetch('http://localhost:8080/api/info')
+        .then(response => response.json())    
+        .then(info => {
+            dispatch({type:'INFO', payload: info})
+        })
+    }
 }
 
