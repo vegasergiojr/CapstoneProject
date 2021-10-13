@@ -1,0 +1,47 @@
+.news-container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+}
+
+/*Hides the screen when pixel reaches bellow 700px*/
+
+@media only screen and (max-width: 700px) {
+    .news-container {
+        display: none;
+    }
+}
+
+.news-post {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 400px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid rgb(0, 255, 98);
+    border-right: 1px solid rgb(0, 104, 122);
+    border-left: 1px solid rgb(0, 104, 122);
+}
+
+.news-image {
+    width: 300px;
+    height: auto;
+}
+
+.news-title {
+    background-color: rgb(0, 104, 122);
+    padding: 5px;
+    width: 100%;
+}
+
+.news-anchor {
+    color: white;
+    text-decoration: none;
+}

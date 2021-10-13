@@ -1,0 +1,17 @@
+import React from 'react'
+import './NewsItems.css'
+
+const NewItem = ({ title, description, url, urlToImage }) => {
+    return (
+        <div className="news-container">
+            <div className="news-post">
+                <img className="news-image" src={urlToImage} />
+                <h3 className="news-title"><a className="news-anchor" href={url}>{title}</a></h3>
+                <p className="news-content">{description}</p>
+            </div>
+        </div>
+
+    )
+}
+
+export default NewItem
