@@ -10,10 +10,13 @@ ul{
     width: 20em;
 
 }
-li {
+/* li {
     scroll-margin-right:2em;
-}
+} */
 
 .PostsDiv {
-    margin:2em
+    margin-left:2em;
+    margin-right: 2em;
+    height: 43em;
+    overflow: scroll;
 }
