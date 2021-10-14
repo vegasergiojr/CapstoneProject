@@ -2,7 +2,7 @@
     width: 100%;
     background-color: black;
     color: white;
-    overflow-y: scroll;
+
 }
 
 /*Hides the screen when pixel reaches bellow 700px*/
@@ -45,3 +45,4 @@
     color: white;
     text-decoration: none;
 }
+

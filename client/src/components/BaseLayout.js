@@ -8,6 +8,8 @@ function BaseLayout(props) {
             <NavBar />
             <div id="children">{props.children}</div>
             <footer></footer>
+
+            <br></br>
         </div>
     )
 }

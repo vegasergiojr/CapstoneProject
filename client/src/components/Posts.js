@@ -2,6 +2,7 @@
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import * as actionCreators from '../store/creators/actionCreators';
+import '../styles/Posts.css'
 
 function Posts(props) {
 
@@ -22,12 +23,20 @@ function Posts(props) {
     const postItems = props.posts.map(post => {
         return <ul id="postUL">
             <li key= {post.id}>
+                <br></br>
                 <div>{post.body_text}</div>
+                <br></br>
                 <div><img src={post.image}></img></div>
                 <div>{post.user_id}</div>
+                <br></br>
                 <button onClick = {() => handlePostDelete(post)}>Delete Post</button>
+                <br></br>
+                <br></br>
                 <div><input type="text" name="body" placeholde="Comment" /></div>
+                <br></br>
                 <button >Comment</button>
+                <br></br>
+                <br></br>
             </li>
         </ul>
     })

@@ -2,8 +2,12 @@
     margin-top: 2em;
     display: flex;
     flex-direction: column;
-    width:20em;
+    padding: 1.5em;
     justify-content: center;
+    border-style: solid;
+    border-width: .3em;
+    border-radius: 1.5em;
+    border-color:rgb(127, 34, 204) ;
 }
 
 textarea {
@@ -17,8 +21,13 @@ input{
     font-size: larger;
 }
 
-button{
-    align-self: center;
 
-    width: 10em;
+button{
+    font-size: large;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(74, 12, 155, 0.753);
+    align-self: center;
 }

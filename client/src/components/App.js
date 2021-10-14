@@ -11,6 +11,7 @@ function App() {
             <Login />
             <Posts />
             <div id="newslist'"><NewsList/></div>
+            <br></br>
         </div>
     );
 }
