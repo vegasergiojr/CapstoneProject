@@ -1,7 +1,21 @@
 .profileInput {
     display: flex;
     justify-content: center;
-    
     flex-direction: column;
+    border-style: solid;
+    border-width: .3em;
+    border-radius: 1.5em;
+    border-color: rgb(127, 34, 204);
+    width: fit-content;
+    padding: 2em;
+    margin: 2em;
 
+}
+textarea {
+    border-radius: .5em;
+
+}
+input {
+    border-radius: .3em;
+    font-size: x-large;
 }

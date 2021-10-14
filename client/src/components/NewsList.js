@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import Axios from 'axios'
+import React, { useEffect, useState } from 'react';
+import Axios from 'axios';
 import NewItem from './NewsItem';
+import '../styles/news.css'
 
 
 const NewsList = () => {
@@ -18,7 +19,7 @@ const NewsList = () => {
         getArticles()
     }, [])
     return (
-        <div >
+        <div id="displayNews">
             {articles.map(({ title, description, url, urlToImage }) => (
                 <NewItem
                     title={title}

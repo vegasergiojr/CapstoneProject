@@ -14,18 +14,23 @@ function Profile(props){
     const userInfo = props.info.map(edit => {
         return <div id="infoUL">
             <li key= {edit.id}>
+                <h2>About Me</h2>
                 <div id="aboutYou">{edit.about_me}</div>
-                <div><a href={edit.cont1}></a></div>
-                <div><a href={edit.cont2}></a></div>
-                <div><a href={edit.cont3}></a></div>
-                <div><a href={edit.cont4}></a></div>
-                <div><a href={edit.cont5}></a></div>
+                <h2>ProjectContributions</h2>
                 <div id="linkIcons">
-                <div><a href={edit.link1}><img src="https://img.icons8.com/nolan/96/github.png" alt="github icon" /></a></div>
-                <div><a href={edit.link2}><img src="https://img.icons8.com/nolan/96/instagram-new.png"/></a></div>
-                <div><a href={edit.link3}><img src="https://img.icons8.com/nolan/96/linkedin.png"/></a></div>
-                <div><a href={edit.link4}><img src="https://img.icons8.com/nolan/96/email.png"/></a></div>
-                <div><a href={edit.link5}><img src="https://img.icons8.com/nolan/96/facebook-new.png"/></a></div></div>
+                <div><a href={edit.cont1}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div>
+                <div><a href={edit.cont2}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div>
+                <div><a href={edit.cont3}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div>
+                <div><a href={edit.cont4}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div>
+                <div><a href={edit.cont5}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div></div>
+                <br></br>
+                <h2>Contact Links</h2>
+                <div id="linkIcons">
+                <div><a href={edit.link1}><img src="https://img.icons8.com/nolan/96/github.png" alt="github"/></a></div>
+                <div><a href={edit.link2}><img src="https://img.icons8.com/nolan/96/instagram-new.png" alt="instagram"/></a></div>
+                <div><a href={edit.link3}><img src="https://img.icons8.com/nolan/96/linkedin.png" alt="LinkedIn"/></a></div>
+                <div><a href={edit.link4}><img src="https://img.icons8.com/nolan/96/email.png" alt="Email"/></a></div>
+                <div><a href={edit.link5}><img src="https://img.icons8.com/nolan/96/facebook-new.png" alt="Facebook"/></a></div></div>
 
             </li>
         </div>

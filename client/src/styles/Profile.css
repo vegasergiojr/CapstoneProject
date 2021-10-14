@@ -1,4 +1,31 @@
+/* #infoUL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+#aboutYou {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-radius: 1.5em;
+    border-color:rgb(127, 34, 204) ;
+    border-width: .25em;
+    font-size: large;
+    color: aliceblue;
+    font-weight: 700;
+    width: 22em;
+    padding: 1em;
+
+}
+
 #linkIcons {
     display: flex;
     flex-direction: row;
+    border-style: solid;
+    border-radius: 1.5em;
+    border-color:rgb(127, 34, 204) ;
+    border-width: .3em;
+}
+h2 {
+    color: aliceblue;
 }

@@ -1,0 +1,19 @@
+ul{
+    list-style: none;
+    color:aliceblue;
+    border: rgb(127, 34, 204);
+    border-width: .3em;
+    border-style: solid;
+    border-radius: 1.5em;
+    font-size: larger;
+    font-weight: 700;
+    width: 20em;
+
+}
+li {
+    scroll-margin-right:2em;
+}
+
+.PostsDiv {
+    margin:2em
+}

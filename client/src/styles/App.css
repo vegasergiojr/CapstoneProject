@@ -1,15 +1,13 @@
 .login-page {
-    border: 5px solid black;
-    width: 100%;
+    color: aliceblue;
     height: auto;
 }
 
 .login {
-    width: 400px;
-    height: 400px;
-    border: 3px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    border: .3em solid rgb(127, 34, 204);
+    border-radius: 1em;
+    padding:1.5em;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,11 +15,10 @@
 }
 
 .register {
-    width: 400px;
-    height: 400px;
-    border: 3px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    border: .3em solid rgb(127, 34, 204);
+    border-radius: 1em;
+    padding:1.5em;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,10 +33,5 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
 
-#newslist {
-    overflow: scroll;
-    height: 20em;
-    width: 25em;
 }
