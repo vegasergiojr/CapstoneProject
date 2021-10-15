@@ -27,11 +27,10 @@ function Profile(props){
                 <h2>Contact Links</h2>
                 <div id="linkIcons">
                 <div><a href={edit.link1}><img src="https://img.icons8.com/nolan/96/github.png" alt="github"/></a></div>
-                <div><a href={edit.link2}><img src="https://img.icons8.com/nolan/96/instagram-new.png" alt="instagram"/></a></div>
-                <div><a href={edit.link3}><img src="https://img.icons8.com/nolan/96/linkedin.png" alt="LinkedIn"/></a></div>
-                <div><a href={edit.link4}><img src="https://img.icons8.com/nolan/96/email.png" alt="Email"/></a></div>
-                <div><a href={edit.link5}><img src="https://img.icons8.com/nolan/96/facebook-new.png" alt="Facebook"/></a></div></div>
-
+                <div><a href={edit.link2}><img src="https://img.icons8.com/nolan/96/linkedin.png" alt="LinkedIn"/></a></div>
+                <div><a href={edit.link3}><img src="https://img.icons8.com/nolan/96/briefcase.png" alt="portfolio"/></a></div>
+                <div><a href={edit.link4}><img src="https://img.icons8.com/nolan/96/facebook-new.png" alt="Facebook"/></a></div>
+                <div><a href={edit.link5}><img src="https://img.icons8.com/nolan/96/instagram-new.png" alt="instagram"/></a></div></div>
             </li>
         </div>
     })
