@@ -9,7 +9,7 @@
     border-style: solid;
     border-radius: 1.5em;
     border-color:rgb(127, 34, 204) ;
-    border-width: .25em;
+    border-width: .15em;
     font-size: large;
     color: aliceblue;
     font-weight: 700;
@@ -24,7 +24,7 @@
     border-style: solid;
     border-radius: 1.5em;
     border-color:rgb(127, 34, 204) ;
-    border-width: .3em;
+    border-width: .15em;
 }
 h2 {
     color: aliceblue;
