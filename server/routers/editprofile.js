@@ -3,7 +3,7 @@ const { sequelize } = require("../models")
 router = express.Router()
 
 
-router.post('/edit-profile', (req, res) => {
+router.put('/edit-profile', (req, res) => {
     
     const about_me = req.body.about_me
     const cont1 = req.body.cont1
