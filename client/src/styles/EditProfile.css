@@ -1,15 +1,17 @@
 .profileInput {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    flex-wrap: wrap;
     border-style: solid;
     border-width: .15em;
     border-radius: 1.5em;
     border-color: rgb(127, 34, 204);
-    width: fit-content;
+    width: 60%;
     padding: 2em;
     margin: 2em;
-
+    color: aliceblue;
+    text-align: center;
 }
 textarea {
     border-radius: .5em;

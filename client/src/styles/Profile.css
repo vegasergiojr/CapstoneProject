@@ -1,8 +1,9 @@
-/* #infoUL {
+li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-} */
+    text-align: center;
+} 
 #aboutYou {
     display: flex;
     flex-direction: row;
@@ -10,22 +11,36 @@
     border-radius: 1.5em;
     border-color:rgb(127, 34, 204) ;
     border-width: .15em;
-    font-size: large;
+    font-size: x-large;
     color: aliceblue;
-    font-weight: 700;
-    width: 22em;
+    font-weight: 400;
+    margin:1em;
     padding: 1em;
-
+    width: 25em;
 }
 
 #linkIcons {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
+    flex-wrap: wrap;
     border-style: solid;
     border-radius: 1.5em;
     border-color:rgb(127, 34, 204) ;
     border-width: .15em;
+    margin:2em;
 }
 h2 {
     color: aliceblue;
+}
+
+#linkcont {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-radius: 1.5em;
+    border-color:rgb(127, 34, 204) ;
+    border-width: .15em;
+    margin:2em;
 }

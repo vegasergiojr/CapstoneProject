@@ -1,7 +1,8 @@
 
 const initialState = {
     posts:[],
-    info:[]
+    info:[],
+    comments: []
 }
 
 const reducer = (state = initialState, action) => {

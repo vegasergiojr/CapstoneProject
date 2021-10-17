@@ -1,23 +1,41 @@
 ul{
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     border: rgb(127, 34, 204);
     border-width: .15em;
     border-style: solid;
     border-radius: 1.5em;
-    font-size: larger;
-    font-weight: 700;
+    font-size: large;
+    font-weight: 300;
     width: 20em;
-
 }
-/* li {
-    scroll-margin-right:2em;
-} */
+#postLI {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 2em;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
+#postBody {
+    height: 10em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .PostsDiv {
-    margin-left:2em;
+    margin-left:1em;
     margin-right: 1em;
     height: 43em;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-right: .5em;
+
+}
+
+#postUL {
+    align-items: center;
+    align-content: center;
 }
