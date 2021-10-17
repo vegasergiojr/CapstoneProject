@@ -17,6 +17,8 @@ li{
     margin:1em;
     padding: 1em;
     width: 25em;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: aliceblue;
 }
 
 #linkIcons {
@@ -26,6 +28,7 @@ li{
     border-style: solid;
     border-radius: 1.5em;
     border-color:rgb(127, 34, 204) ;
+    background-color: rgba(0, 0, 0, 0.5);
     border-width: .15em;
     margin:2em;
 }
@@ -43,4 +46,6 @@ h2 {
     border-color:rgb(127, 34, 204) ;
     border-width: .15em;
     margin:2em;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }

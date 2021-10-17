@@ -7,9 +7,9 @@
     border-width: .15em;
     border-radius: 1.5em;
     border-color: rgb(127, 34, 204);
-    width: 60%;
+    width: fit-content;
     padding: 2em;
-    margin: 2em;
+    margin: em;
     color: aliceblue;
     text-align: center;
 }
