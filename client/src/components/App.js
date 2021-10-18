@@ -3,6 +3,7 @@ import '../styles/App.css';
 import Login from './Login';
 import Posts from './Posts';
 import NewsList from './NewsList';
+import Register from './Register';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
         <div className="App">
             <Login />
             <Posts />
-            <div id="newslist'"><NewsList/></div>
+            <Register />
+            <div id="newslist"><NewsList /></div>
             <br></br>
         </div>
     );

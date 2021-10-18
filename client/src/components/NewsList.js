@@ -19,12 +19,11 @@ const NewsList = () => {
         getArticles()
     }, [])
     return (
-        <div id="displayNews">
-            {articles.map(({ title, description, url, urlToImage, publishedAt }) => (
+        <div id="displayNews" >
+            {articles.map(({ title, description, url, urlToImage }) => (
                 <NewItem
                     title={title}
-                    description={description}
-                    publishedAt={publishedAt}
+                    description={description}              
                     url={url}
                     urlToImage={urlToImage} />
             ))}
