@@ -4,7 +4,7 @@
 }
 
 .login {
-    border: .3em solid rgb(127, 34, 204);
+    border: .15em solid rgb(127, 34, 204);
     border-radius: 1em;
     padding:1.5em;
 
@@ -15,7 +15,7 @@
 }
 
 .register {
-    border: .3em solid rgb(127, 34, 204);
+    border: .15em solid rgb(127, 34, 204);
     border-radius: 1em;
     padding:1.5em;
 

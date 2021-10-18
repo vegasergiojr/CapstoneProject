@@ -3,9 +3,9 @@
     height: 30em;
     overflow-y: scroll ;
     border-radius: 1.5em;
-    border-width: .3em;
+    border-width: .15em;
     border-color: rgb(127, 34, 204);
     border-style: solid;
-    margin: 2em;
+    margin: 1em;
     padding:1em;
 }

@@ -1,22 +1,45 @@
 ul{
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     border: rgb(127, 34, 204);
-    border-width: .3em;
+    border-width: .15em;
     border-style: solid;
     border-radius: 1.5em;
-    font-size: larger;
-    font-weight: 700;
+    font-size: large;
+    font-weight: 500;
     width: 20em;
+}
+#postLI {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 2em;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#postBody {
+    text-align:center;
+    height: 10em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    color: black
+}
+.PostsDiv {
+    margin-left:1em;
+    margin-right: 1em;
+    height: 43em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: .5em;
 
 }
-/* li {
-    scroll-margin-right:2em;
-} */
 
-.PostsDiv {
-    margin-left:2em;
-    margin-right: 2em;
-    height: 43em;
-    overflow: scroll;
+#postUL {
+    align-items: center;
+    align-content: center;
 }

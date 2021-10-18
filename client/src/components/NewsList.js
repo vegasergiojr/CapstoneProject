@@ -23,7 +23,7 @@ const NewsList = () => {
             {articles.map(({ title, description, url, urlToImage }) => (
                 <NewItem
                     title={title}
-                    description={description}
+                    description={description}              
                     url={url}
                     urlToImage={urlToImage} />
             ))}

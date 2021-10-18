@@ -11,7 +11,7 @@ export class Navbar extends Component {
                 <NavLink to="/profile"><div className="profilePage">Profile</div></NavLink>
                 <NavLink to="/edit-profile"><div className="editProfile">Edit Profile</div></NavLink>
             </div>
-        )
+        )                            
     }
 }
 

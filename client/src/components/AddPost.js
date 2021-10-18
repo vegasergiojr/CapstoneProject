@@ -30,8 +30,8 @@ function AddPost(props) {
         <div id="addPostDiv">
             <textarea type="text" name="body_text" placeholder="Share Something!" onChange={handleOnChange} />
             <br></br>
-            <input type="text" name="image" placeholder="Share Image!" onChange={handleOnChange} />
-            <br></br>
+            {/* <input type="text" name="image" placeholder="Share Image!" onChange={handleOnChange} />
+            <br></br> */}
             <button onClick={newPost}>Share Post!</button>
         </div>
     )

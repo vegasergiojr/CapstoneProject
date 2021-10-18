@@ -41,8 +41,12 @@ function EditProfile(props) {
 
     return(
         <div className="profileInput">
+            <div>
+            <h3>TELL ME ABOUT YOURSELF :</h3>
             <textarea type="text" name="about_me" value={info.about_me} placeholder="Describe Yourself" onChange={handleUserChange}/>
-            <br></br>
+            </div>
+            <div>
+            <h3>PROJECTS YOU WOULD LIKE TO SHARE :</h3>
             <input type="text" name="cont1" value={info.cont1} placeholder="Project Contribution #" onChange={handleUserChange} />
             <br></br>
             <input type="text" name="cont2" value={info.cont2} placeholder="Project Contribution #" onChange={handleUserChange} />
@@ -53,6 +57,11 @@ function EditProfile(props) {
             <br></br>
             <input type="text" name="cont5" value={info.cont5} placeholder="Project Contribution #" onChange={handleUserChange} />
             <br></br>
+            </div>
+            
+            <br></br>
+            <div>
+            <h3>LINKS YOU CAN BE REACHED THROUGH :</h3>
             <input type="text" name="link1" value={info.link1} placeholder="GitHub URL" onChange={handleUserChange} />
             <br></br>
             <input type="text" name="link2" value={info.link2} placeholder="Linked In URL" onChange={handleUserChange} />
@@ -63,7 +72,11 @@ function EditProfile(props) {
             <br></br>
             <input type="text" name="link5" value={info.link5} placeholder="InstagramURL" onChange={handleUserChange} />
             <br></br>
-            <button onClick={saveInfo}>Save</button>
+            <br></br>
+            <button onClick={saveInfo}>SAVE</button>
+            </div>
+            
+
         </div>
 
     )
