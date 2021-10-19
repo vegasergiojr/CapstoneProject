@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import jwtDecode from 'jwt-decode'
 
 
 function Login(props) {
@@ -13,7 +14,7 @@ function Login(props) {
     }
 
     const handleLogin = () => {
-        fetch("http://localhost:8080/api/v1/user/login", {
+        fetch("http://localhost:8080/api/v1/users/login", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -21,7 +22,11 @@ function Login(props) {
             body: JSON.stringify(user)
         }).then(response => response.json())
             .then(result => {
+                const decodedToken = jwtDecode(result.token)
+                console.log(decodedToken)
                 localStorage.setItem('jsonwebtoken', result.token)
+                localStorage.setItem('username', decodedToken.username)
+                localStorage.setItem('user_id', decodedToken.user_id)
                 console.log(result)
             })
     }
