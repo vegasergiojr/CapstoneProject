@@ -49,3 +49,176 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
 
 }
+
+
+
+@media only screen and (min-width:100px) and (max-width:415px) {
+    li{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        align-content: center;
+    }
+    #aboutYou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+    #linkIcons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    #linkcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+
+    }
+    #infoUL {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        align-content: center;
+    }
+}
+
+@media only screen and (min-width:416px)and (max-width:767px){
+    li{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        align-content: center;
+    }
+    #aboutYou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+    #linkIcons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    #linkcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+
+    }
+    #infoUL {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        align-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    li{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        align-content: center;
+    }
+    #aboutYou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+    #linkIcons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    #linkcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+
+    }
+    #infoUL {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        align-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    li{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        align-content: center;
+    }
+    #aboutYou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+    #linkIcons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    #linkcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+
+    }
+    #infoUL {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        align-content: center;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    li{
+
+    }
+    #aboutYou {
+
+    }
+    #linkIcons{
+
+    }
+    #linkcont{
+        
+    }
+}
