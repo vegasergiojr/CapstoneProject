@@ -9,9 +9,9 @@ import Register from './Register';
 function App() {
     return (
         <div className="App">
-            <Login />
+
             <Posts />
-            <Register />
+
             <div id="newslist"><NewsList /></div>
             <br></br>
         </div>

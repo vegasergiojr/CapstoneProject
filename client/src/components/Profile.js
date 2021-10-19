@@ -7,6 +7,10 @@ import '../styles/Profile.css'
 
 function Profile(props){
 
+    // const mostRecent = () => {
+
+    // }
+
     useEffect(() => {
         props.onAllInfo()
     }, [])

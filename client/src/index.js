@@ -13,6 +13,8 @@ import AddPost from './components/AddPost';
 import EditProfile from './components/EditProfile';
 import Profile from './components/Profile';
 import App from './components/App';
+import Login from './components/Login';
+import Register from './components/Register';
 
 
 
@@ -27,7 +29,9 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <BaseLayout>
-          <Route component={ App } exact path='/' />
+          <Route component={ Login } exact path="/" />
+          <Route component={Register } path="/register" />
+          <Route component={ App } path='/home' />
           <Route component={ AddPost } path="/create-a-post" />
           <Route component={ EditProfile} path="/edit-profile" />
           <Route component={ Profile } path="/profile" />

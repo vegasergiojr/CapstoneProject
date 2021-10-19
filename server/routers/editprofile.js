@@ -3,8 +3,9 @@ const { sequelize } = require("../models")
 router = express.Router()
 
 
-router.put('/edit-profile', (req, res) => {
+router.patch('/edit-profile/:user', (req, res) => {
     
+
     const about_me = req.body.about_me
     const cont1 = req.body.cont1
     const cont2 = req.body.cont2
@@ -17,7 +18,7 @@ router.put('/edit-profile', (req, res) => {
     const link4 = req.body.link4
     const link5 = req.body.link5
 
-    const edit = models.Edit.build({
+    const edit =  models.Edit.create({
         about_me: about_me,
         cont1: cont1,
         cont2: cont2,
@@ -37,9 +38,7 @@ router.put('/edit-profile', (req, res) => {
     })
 })
 
-router.get('/edit-profile', (req, res) => {
-    models.Edit
-})
+
 
 
 module.exports = router

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import jwtDecode from 'jwt-decode'
-
+import { connect } from 'react-redux';
 
 function Login(props) {
 
@@ -27,6 +27,8 @@ function Login(props) {
                 localStorage.setItem('jsonwebtoken', result.token)
                 localStorage.setItem('username', decodedToken.username)
                 localStorage.setItem('user_id', decodedToken.user_id)
+                props.history.push('/home')
+                props.onLoggedIn()
                 console.log(result)
             })
     }
@@ -46,5 +48,11 @@ function Login(props) {
     )
 }
 
-export default Login
+const mapDispatchToProps =(dispatch) => {
+    return {
+        onLoggedIn: () => dispatch({type: 'LOGGED_IN'})
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Login)
 

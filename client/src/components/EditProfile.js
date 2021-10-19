@@ -28,7 +28,7 @@ function EditProfile(props) {
 
     const saveInfo = () => {
         fetch('http://localhost:8080/api/info', {
-            method: "PUT",
+            method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(info)
         })
