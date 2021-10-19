@@ -3,11 +3,6 @@ import { useState } from 'react'
 
 function Login(props) {
 
-    const [usernameRegistration, setUsernameReg] = useState("")
-    const [passwordRegistration, setPasswordReg] = useState("")
-    const [firstnameRegistration, setFirstnameReg] = useState("")
-    const [lastnameRegistration, setLastnameReg] = useState("")
-    const [emailRegistration, setEmailReg] = useState("")
     const [user, setUser] = useState({})
 
     const handleOnChange = (e) => {
@@ -27,7 +22,6 @@ function Login(props) {
         }).then(response => response.json())
             .then(result => {
                 localStorage.setItem('jsonwebtoken', result.token)
-
                 console.log(result)
             })
     }

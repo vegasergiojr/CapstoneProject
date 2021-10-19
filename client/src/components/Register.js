@@ -59,12 +59,12 @@ export default function Register() {
                     className="input-fields" name="last_name" type="text" placeholder="Last Name">
                 </input>
                 <input
-                    onChange={handleOnChange} value={user.email}
-                    className="input-fields" name="email" type="email" placeholder="Username">
+                    onChange={handleOnChange} value={user.username}
+                    className="input-fields" name="username" type="text" placeholder="Username">
                 </input>
                 <input
-                    onChange={handleOnChange} value={user.username}
-                    className="input-fields" name="username" type="text" placeholder="Email"></input>
+                    onChange={handleOnChange} value={user.email}
+                    className="input-fields" name="email" type="email" placeholder="Email"></input>
                 <input
                     onChange={handleOnChange} value={user.password}
                     className="input-fields" name="password" type="password" placeholder="Password">
