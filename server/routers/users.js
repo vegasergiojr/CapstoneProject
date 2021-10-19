@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const { sequelize } = require('../models')
+const models = require('../models')
 const bcrypt = require('bcrypt');
+const jwt = require("jsonwebtoken")
+require('dotenv').config()
 
 
 /* GET users listing. */
@@ -35,17 +37,22 @@ router.post("/login", (req, res) => {
     const username = req.body.username
     const password = req.body.password
 
-    const persistedUser = users.find(user => {
-        return user.username == username && user.password == password;
+    const persistedUser = models.User.findOne({
+        where: {
+            username: username
+        }
+    }).then(user => {
+        bcrypt.compare(password, user.password, (error, result) => {
+            if (result) {
+                const token = jwt.sign({ username: username, user_id: user.id }, process.env.JWT_SECRET_KEY)
+                res.json({ success: true, token: token })
+            }
+            else {
+                console.log(error)
+                res.json({ success: false, message: 'user not authenticated!' })
+            }
+        })
     })
-
-    if (persistedUser) {
-        const token = jwt.sign({ username: username }, process.env.JWT_SECRET_KEY)
-        res.json({ success: true, token: token })
-    }
-    else {
-        res.json({ success: false, message: 'user not authenticated!' })
-    }
 })
 
 module.exports = router;
