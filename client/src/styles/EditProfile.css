@@ -7,9 +7,8 @@
     border-width: .15em;
     border-radius: 1.5em;
     border-color: rgb(127, 34, 204);
-    width: fit-content;
-    padding: 2em;
-    margin: em;
+    width: 80%;
+    
     color: aliceblue;
     text-align: center;
 }
@@ -20,4 +19,84 @@ textarea {
 input {
     border-radius: .3em;
     font-size: x-large;
+}
+
+
+
+@media only screen and (min-width:100px) and (max-width:415px) {
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width:416px)and (max-width:767px){
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 1026px) and (max-width: 1200px){
+    .profileInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    textarea {
+        width: 90%;
+    }
 }
