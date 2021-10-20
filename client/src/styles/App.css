@@ -30,6 +30,12 @@
     margin-bottom: 5px;
 }
 
+.App {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
 
 
 @media only screen and (min-width:100px) and (max-width:415px) {
@@ -55,20 +61,22 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .App {
+    .App div{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-}
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .App div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
 
+    }
 }
