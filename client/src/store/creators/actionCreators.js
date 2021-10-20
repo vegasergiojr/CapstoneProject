@@ -9,9 +9,9 @@ export const fetchPosts = () => {
     }
 }
 
-export const fetchInfo = () => {
+export const fetchInfo = (user_id) => {
         return (dispatch) => {
-        fetch('http://localhost:8080/api/v1/users/:user', {
+        fetch(`http://localhost:8080/api/v1/users/edit-profile/${user_id}`, {
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
@@ -20,6 +20,7 @@ export const fetchInfo = () => {
         }) 
         .then(response => response.json())    
         .then(info => {
+            console.log(info)
             dispatch({type:'INFO', payload: info})
         })
     }

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import * as actionCreators from '../store/creators/actionCreators';
 import '../styles/Posts.css';
-import Comments from './Comments';
+
 
 function Posts(props) {
 
@@ -31,7 +31,7 @@ function Posts(props) {
                 <button onClick = {() => handlePostDelete(post)}>Delete Blog</button>
 
 
-                {/* <Comments /> */}
+                
 
             </li>
         </ul>

@@ -30,12 +30,11 @@ app.get('/', (req, res) => {
 app.post('/api/post', (req, res) => {
 
     const body_text = req.body.body_text
-    const image = req.body.image
-
+    const user_id= req.body.user_id
 
     const post = models.Post.build({
         body_text: body_text,
-        image: image,
+        user_id:user_id,
 
     })
 
