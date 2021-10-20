@@ -6,6 +6,7 @@ import '../styles/EditProfile.css'
 function EditProfile(props) {
 
     const [info, setInfo] = useState({
+        user_id: localStorage.getItem('user_id'),
         about_me: "",
         cont1: "",
         cont2: "",
@@ -27,8 +28,9 @@ function EditProfile(props) {
     }
 
     const saveInfo = () => {
-        fetch('http://localhost:8080/api/info', {
-            method: "PATCH",
+        console.log('fired')
+        fetch('http://localhost:8080/api/v1/users/edit-profile', {
+            method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(info)
         })
@@ -36,7 +38,7 @@ function EditProfile(props) {
             .then(result => {
             
             })
-        props.onNewInfo()
+        // props.onNewInfo()
     }
 
     return(

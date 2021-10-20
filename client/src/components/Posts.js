@@ -2,7 +2,8 @@
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import * as actionCreators from '../store/creators/actionCreators';
-import '../styles/Posts.css'
+import '../styles/Posts.css';
+import Comments from './Comments';
 
 function Posts(props) {
 
@@ -27,12 +28,10 @@ function Posts(props) {
                 <div id="postBody">{post.body_text}</div>
                 <div><img src={post.image}></img></div>
                 <div>{post.user_id}</div>
-
                 <button onClick = {() => handlePostDelete(post)}>Delete Blog</button>
 
-                <div><input type="text" name="body" placeholde="Comment" /></div>
 
-                <button >Comment</button>
+                {/* <Comments /> */}
 
             </li>
         </ul>

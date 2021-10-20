@@ -5,7 +5,9 @@ import '../styles/AddPost.css';
 
 function AddPost(props) {
 
-    const [post, setPost] = useState({})
+    const [post, setPost] = useState({
+        user_id: localStorage.getItem('user_id')
+    })
 
     const handleOnChange = (e) => {
         setPost({
