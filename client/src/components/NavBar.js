@@ -14,6 +14,7 @@ function Navbar(props) {
                 {props.isLoggedIn ? <NavLink to="/create-a-post"><div className="createPost">Create A Post</div></NavLink> : null }
                 {props.isLoggedIn ? <NavLink to="/profile"><div className="profilePage">Profile</div></NavLink> : null }
                 {props.isLoggedIn ? <NavLink to="/edit-profile"><div className="editProfile">Edit Profile</div></NavLink> : null }
+                {props.isLoggedIn ? <NavLink to="/" ><div className="Logout" onClick="window.location.href=window.location.href">Logout</div></NavLink> : null }
             </div>
         )                            
     
