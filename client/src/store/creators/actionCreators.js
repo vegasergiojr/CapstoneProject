@@ -11,7 +11,13 @@ export const fetchPosts = () => {
 
 export const fetchInfo = () => {
         return (dispatch) => {
-        fetch('http://localhost:8080/api/info')
+        fetch('http://localhost:8080/api/v1/users/:user', {
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            }
+
+        }) 
         .then(response => response.json())    
         .then(info => {
             dispatch({type:'INFO', payload: info})

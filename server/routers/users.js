@@ -94,4 +94,15 @@ router.put('/edit-profile', (req, res) => {
     })
 })
 
+router.get('/:user', (req, res) => {
+    const user = models.Users.findByPk(req.params.id)
+    res.status(201).json(user)
+
+
+})
+
+
+
+
+
 module.exports = router;
