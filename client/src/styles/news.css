@@ -1,11 +1,11 @@
 #displayNews {
-    width:30em;
+    width:25em;
     height: 30em;
     overflow-y: scroll ;
     border-radius: 1.5em;
     border-width: .15em;
     border-color: rgb(127, 34, 204);
     border-style: solid;
-    margin: 1em;
     padding:1em;
+    margin-right: 1em;
 }

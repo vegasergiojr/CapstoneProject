@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 700px) {
     .news-container {
-        display: none;
+        display: flex;
     }
 }
 
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 400px;
+    width: fit-content;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 25px;
@@ -31,14 +31,14 @@
 }
 
 .news-image {
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
 .news-title {
     background-color: rgba(63, 116, 126, 0.582);
     padding: 5px;
-    width: 100%;
+    width: fit-content;
 }
 
 .news-anchor {

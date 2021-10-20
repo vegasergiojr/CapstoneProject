@@ -32,13 +32,14 @@ function Profile(props){
                 <div id="aboutYou">{edit.about_me}</div>
                 <div>
                 <h2>Project Contributions</h2>
-
+                
                 <div id="linkcont">
-                <a href={edit.cont1}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
-                <a href={edit.cont2}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
-                <a href={edit.cont3}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
-                <a href={edit.cont4}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
-                <a href={edit.cont5}><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div></div>
+                    
+                <a href={edit.cont1}><h3>GOOD</h3><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
+                <a href={edit.cont2}><h3>BETTER</h3><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
+                <a href={edit.cont3}><h3>BEST</h3><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
+                <a href={edit.cont4}><h3>GREATER</h3><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a>
+                <a href={edit.cont5}><h3>GREATEST</h3><img src="https://img.icons8.com/nolan/96/repository.png" alt="repo"/></a></div></div>
                 </div>
 
             </li>

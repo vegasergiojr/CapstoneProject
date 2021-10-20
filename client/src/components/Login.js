@@ -38,7 +38,7 @@ function Login(props) {
             <div className="login">
                 <h3>Login</h3>
                 <input className="input-fields" onChange={handleOnChange} name="username" type="text" placeholder="Username..."></input>
-                <input className="input-fields" onChange={handleOnChange} name="password" type="text" placeholder="Password..."></input>
+                <input className="input-fields" onChange={handleOnChange} name="password" type="password" placeholder="Password..."></input>
                 <br></br>
                 <button type="submit" onClick={handleLogin}>Login</button>
             </div>
