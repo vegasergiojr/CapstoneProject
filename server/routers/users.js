@@ -94,10 +94,14 @@ router.put('/edit-profile', (req, res) => {
     })
 })
 
-router.get('/:user', (req, res) => {
-    const user = models.Users.findByPk(req.params.id)
-    res.status(201).json(user)
-
+router.get('/edit-profile/:user_id', (req, res) => {
+    models.User.findOne({
+        where:{id:req.params.user_id}
+    }).then(user=>{
+        res.status(201).json(user)
+    })
+    // const user = models.User.findByPk(req.params.user_id)
+    // console.log(user)
 
 })
 

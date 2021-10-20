@@ -4,9 +4,9 @@ import * as actionCreators from "../store/creators/actionCreators";
 import '../styles/AddPost.css';
 
 function AddPost(props) {
-
+    const id= localStorage.getItem('user_id')
     const [post, setPost] = useState({
-        user_id: localStorage.getItem('user_id')
+        
     })
 
     const handleOnChange = (e) => {
@@ -30,10 +30,10 @@ function AddPost(props) {
 
     return(
         <div id="addPostDiv">
+            <input type="hidden" name="user_id" value={id} />
             <textarea type="text" name="body_text" placeholder="Share Something!" onChange={handleOnChange} />
             <br></br>
-            {/* <input type="text" name="image" placeholder="Share Image!" onChange={handleOnChange} />
-            <br></br> */}
+            
             <button onClick={newPost}>Share Post!</button>
         </div>
     )

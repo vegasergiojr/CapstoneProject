@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
     font-size: x-large;
     font-weight: 700;
     flex-wrap: wrap;
     color:aliceblue ;
+    width: 100%;
 }
 a:link {
     text-decoration: none;
@@ -52,17 +54,18 @@ a:link {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .Nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
-        width: 100%;
+        text-align: center;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .Nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
+        text-align: center;
         width: 100%;
     }
 }
