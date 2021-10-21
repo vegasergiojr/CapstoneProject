@@ -22,8 +22,8 @@ function Posts(props) {
     }
 
     const postItems = props.posts.map(post => {
-        return <ul id="postUL">
-            <li key= {post.id} id="postLI">
+        return <ul id="postUL" key= {post.id}>
+            <li  id="postLI">
                 <br></br>
                 <div id="postBody">{post.body_text}</div>
                 <div><img src={post.image}></img></div>
@@ -38,7 +38,7 @@ function Posts(props) {
     })
 
     return (
-        <div className="PostsDiv">
+        <div className="PostsDiv" >
             {postItems}
         </div>
     )

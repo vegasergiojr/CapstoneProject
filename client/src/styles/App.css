@@ -32,7 +32,7 @@
 
 .App {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
 
 }
@@ -61,7 +61,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .App div{
+    .App {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,7 +76,7 @@
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
-    .App div{
+    .App {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
