@@ -20,13 +20,14 @@ const NewsList = () => {
     }, [])
     return (
         <div id="displayNews"  >
-            {articles.map(({ title, description, url, urlToImage }) => (
+            {articles.map(({ title, description, url, urlToImage }, index) => (
                 <NewItem
+                    key={index}
                     title={title}
-                    description={description}              
+                    description={description}
                     url={url}
                     urlToImage={urlToImage}
-                     />
+                />
             ))}
         </div>
     )
