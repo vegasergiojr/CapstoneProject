@@ -1,4 +1,4 @@
-##CapstoneProject
+#CapstoneProject
 
 Purpose of the app: This Portfolio App is targeting software engineering students. It was created to provide an opportunity for students to spend more time on their classroom assignments and software projects. Students can now create a Portfolio in a matter of minutes and not hours and meet their graduation requirements. 
 
